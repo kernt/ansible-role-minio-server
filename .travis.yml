@@ -1,6 +1,6 @@
 ---
 language: python
-python: "2.7"
+python: "3.8"
 cache: pip
 
 # Use the new container infrastructure
@@ -12,12 +12,12 @@ services:
 
 env:
   matrix:
-    - ANSIBLE=2.7
-    - ANSIBLE=2.8
+    - ANSIBLE=2.9
+    - ANSIBLE=2.10
 
 # Install tox
 install:
-  - pip install tox-travis git-semver
+  - pip3 install tox-travis git-semver
 
 # Execute tests
 script:

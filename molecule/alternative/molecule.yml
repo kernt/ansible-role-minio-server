@@ -10,28 +10,23 @@ dependency:
   name: galaxy
 
 platforms:
-  - name: minio-centos-7
-    image: paulfantom/centos-molecule:7
+  - name: minio-centos-latest
+    image: paulfantom/centos-molecule:latest
     privileged: true
     volumes:
       - /sys/fs/cgroup:/sys/fs/cgroup:ro
-  - name: minio-fedora-27
-    image: paulfantom/fedora-molecule:27
+  - name: minio-fedora-latest
+    image: paulfantom/fedora-molecule:latest
     privileged: true
     volumes:
       - /sys/fs/cgroup:/sys/fs/cgroup:ro
-  - name: minio-debian-9
-    image: paulfantom/debian-molecule:9
+  - name: minio-debian-latest
+    image: paulfantom/debian-molecule:latest
     privileged: true
     volumes:
       - /sys/fs/cgroup:/sys/fs/cgroup:ro
-  - name: minio-ubuntu-18.04
-    image: paulfantom/ubuntu-molecule:18.04
-    privileged: true
-    volumes:
-      - /sys/fs/cgroup:/sys/fs/cgroup:ro
-  - name: minio-ubuntu-16.04
-    image: paulfantom/ubuntu-molecule:16.04
+  - name: minio-ubuntu-latest
+    image: paulfantom/ubuntu-molecule:latest
     privileged: true
     volumes:
       - /sys/fs/cgroup:/sys/fs/cgroup:ro

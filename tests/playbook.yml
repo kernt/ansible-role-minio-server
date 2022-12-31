@@ -1,0 +1,9 @@
+---
+ - hosts: localhost
+   become: yes
+   user: root
+   #become_user: root
+   #become_method: su
+   tasks:
+  roles:
+    - { role: ansible-role-minio-server, tags: [ 'minio'] }
