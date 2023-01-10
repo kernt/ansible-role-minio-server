@@ -1,9 +1,9 @@
 ---
- - hosts: localhost
-   become: yes
-   user: root
-   #become_user: root
-   #become_method: su
-   tasks:
+- name: Play test Playbook
+  hosts: localhost
+  become: yes
+  user: root
+  #become_user: root
+  #become_method: su
   roles:
-    - { role: ansible-role-minio-server, tags: [ 'minio'] }
+  - ansible-role-minio-server

@@ -1,0 +1,640 @@
+2023-01-01 13:36:06,245 p=1779581 u=tobkern n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names to new standard, use callbacks_enabled instead. This feature will
+ be removed from ansible-core in version 2.15. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2023-01-01 13:36:06,433 p=1779581 u=tobkern n=ansible | ERROR! the role 'ansible-role-minio-server' was not found in /opt/dev/ansible/roles/ansible-role-minio-server/tests/roles:/home/tobkern/.ansible/roles:/usr/share/ansible/roles:/etc/ansible/roles:/opt/dev/ansible/roles/ansible-role-minio-server/tests:/opt/dev/ansible/roles/ansible-role-minio-server/tests
+
+The error appears to be in '/opt/dev/ansible/roles/ansible-role-minio-server/tests/playbook.yml': line 8, column 6, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+   roles:
+   - ansible-role-minio-server
+     ^ here
+
+2023-01-01 13:36:15,957 p=1779732 u=tobkern n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names to new standard, use callbacks_enabled instead. This feature will
+ be removed from ansible-core in version 2.15. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2023-01-01 13:36:16,145 p=1779732 u=tobkern n=ansible | ERROR! the role 'ansible-role-minio-server' was not found in /opt/dev/ansible/roles/ansible-role-minio-server/tests/roles:/home/tobkern/.ansible/roles:/usr/share/ansible/roles:/etc/ansible/roles:/opt/dev/ansible/roles/ansible-role-minio-server/tests:/opt/dev/ansible/roles/ansible-role-minio-server/tests
+
+The error appears to be in '/opt/dev/ansible/roles/ansible-role-minio-server/tests/playbook.yml': line 8, column 8, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+   roles:
+     - ansible-role-minio-server
+       ^ here
+
+2023-01-01 13:38:56,812 p=1780938 u=tobkern n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2023-01-01 13:38:57,004 p=1780938 u=tobkern n=ansible | ERROR! the role 'ansible-role-minio-server' was not found in /opt/dev/ansible/roles/ansible-role-minio-server/tests/roles:/home/tobkern/.ansible/roles:/usr/share/ansible/roles:/etc/ansible/roles:/opt/dev/ansible/roles/ansible-role-minio-server/tests:/opt/dev/ansible/roles/ansible-role-minio-server/tests
+
+The error appears to be in '/opt/dev/ansible/roles/ansible-role-minio-server/tests/playbook.yml': line 9, column 5, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  roles:
+  - ansible-role-minio-server
+    ^ here
+
+2023-01-01 13:41:22,368 p=1782089 u=tobkern n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2023-01-01 13:41:22,692 p=1782089 u=tobkern n=ansible | ERROR! Invalid callback for stdout specified: skippy
+2023-01-01 13:41:51,533 p=1782206 u=tobkern n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2023-01-01 13:41:51,900 p=1782206 u=tobkern n=ansible | [WARNING]: Skipping callback plugin 'timer', unable to load
+
+2023-01-01 13:41:51,902 p=1782206 u=tobkern n=ansible | [WARNING]: Skipping callback plugin 'profile_tasks', unable to load
+
+2023-01-01 13:41:51,903 p=1782206 u=tobkern n=ansible | [WARNING]: Skipping callback plugin 'profile_roles', unable to load
+
+2023-01-01 13:41:51,908 p=1782206 u=tobkern n=ansible | PLAY [Play test Playbook] *************************************************************************************************************************************
+2023-01-01 13:41:51,941 p=1782206 u=tobkern n=ansible | TASK [Gathering Facts] ****************************************************************************************************************************************
+2023-01-01 13:41:59,560 p=1782206 u=tobkern n=ansible | ok: [localhost]
+2023-01-01 13:41:59,631 p=1782206 u=tobkern n=ansible | TASK [ansible-role-minio-server : Add sni support to legacy python installations] *****************************************************************************
+2023-01-01 13:41:59,701 p=1782206 u=tobkern n=ansible | skipping: [localhost]
+2023-01-01 13:41:59,740 p=1782206 u=tobkern n=ansible | TASK [ansible-role-minio-server : include_tasks] **************************************************************************************************************
+2023-01-01 13:41:59,847 p=1782206 u=tobkern n=ansible | included: /opt/dev/ansible/roles/ansible-role-minio-server/tasks/install-server.yml for localhost
+2023-01-01 13:41:59,887 p=1782206 u=tobkern n=ansible | TASK [ansible-role-minio-server : Compose the Minio server download base url] *********************************************************************************
+2023-01-01 13:41:59,985 p=1782206 u=tobkern n=ansible | ok: [localhost]
+2023-01-01 13:42:00,022 p=1782206 u=tobkern n=ansible | TASK [ansible-role-minio-server : Compose the Minio server download url with lastest release] *****************************************************************
+2023-01-01 13:42:00,112 p=1782206 u=tobkern n=ansible | ok: [localhost]
+2023-01-01 13:42:00,162 p=1782206 u=tobkern n=ansible | TASK [ansible-role-minio-server : Compose the Minio server download url with release] *************************************************************************
+2023-01-01 13:42:00,233 p=1782206 u=tobkern n=ansible | skipping: [localhost]
+2023-01-01 13:42:00,308 p=1782206 u=tobkern n=ansible | TASK [ansible-role-minio-server : Get the Minio server checksum for amd64 architecture] ***********************************************************************
+2023-01-01 13:42:01,617 p=1782206 u=tobkern n=ansible | ok: [localhost]
+2023-01-01 13:42:01,656 p=1782206 u=tobkern n=ansible | TASK [ansible-role-minio-server : Create Minio group] *********************************************************************************************************
+2023-01-01 13:42:02,855 p=1782206 u=tobkern n=ansible | ok: [localhost]
+2023-01-01 13:42:02,896 p=1782206 u=tobkern n=ansible | TASK [ansible-role-minio-server : Create Minio user] **********************************************************************************************************
+2023-01-01 13:42:04,362 p=1782206 u=tobkern n=ansible | changed: [localhost]
+2023-01-01 13:42:04,404 p=1782206 u=tobkern n=ansible | TASK [ansible-role-minio-server : Create the Minio data storage directories] **********************************************************************************
+2023-01-01 13:42:05,644 p=1782206 u=tobkern n=ansible | [0;31m--- before[0m
+[0;31m[0m[0;32m+++ after[0m
+[0;32m[0m[0;36m@@ -1,6 +1,6 @@[0m
+[0;36m[0m {
+[0;31m-    "group": 1005,[0m
+[0;31m[0m[0;31m-    "mode": "0755",[0m
+[0;31m[0m[0;31m-    "owner": 1005,[0m
+[0;31m[0m[0;32m+    "group": 989,[0m
+[0;32m[0m[0;32m+    "mode": "0750",[0m
+[0;32m[0m[0;32m+    "owner": 989,[0m
+[0;32m[0m     "path": "/mnt/data1/minio"
+ }
+
+
+2023-01-01 13:42:05,646 p=1782206 u=tobkern n=ansible | changed: [localhost] => (item=/mnt/data1/minio)
+2023-01-01 13:42:06,482 p=1782206 u=tobkern n=ansible | [0;31m--- before[0m
+[0;31m[0m[0;32m+++ after[0m
+[0;32m[0m[0;36m@@ -1,6 +1,6 @@[0m
+[0;36m[0m {
+[0;31m-    "group": 1005,[0m
+[0;31m[0m[0;31m-    "mode": "0755",[0m
+[0;31m[0m[0;31m-    "owner": 1005,[0m
+[0;31m[0m[0;32m+    "group": 989,[0m
+[0;32m[0m[0;32m+    "mode": "0750",[0m
+[0;32m[0m[0;32m+    "owner": 989,[0m
+[0;32m[0m     "path": "/mnt/data2/minio"
+ }
+
+
+2023-01-01 13:42:06,484 p=1782206 u=tobkern n=ansible | changed: [localhost] => (item=/mnt/data2/minio)
+2023-01-01 13:42:06,525 p=1782206 u=tobkern n=ansible | TASK [ansible-role-minio-server : Download the Minio server] **************************************************************************************************
+2023-01-01 13:42:47,142 p=1782206 u=tobkern n=ansible | changed: [localhost]
+2023-01-01 13:42:47,181 p=1782206 u=tobkern n=ansible | TASK [ansible-role-minio-server : Generate the Minio server envfile] ******************************************************************************************
+2023-01-01 13:42:51,224 p=1782206 u=tobkern n=ansible | [0;31m--- before: /etc/default/minio[0m
+[0;31m[0m[0;32m+++ after: /home/tobkern/.ansible/tmp/ansible-local-1782206rmb9lb3b/tmpyk88qfn7/minio.env.j2[0m
+[0;32m[0m[0;36m@@ -1,39 +1,10 @@[0m
+[0;36m[0m[0;31m-# Set the hosts and volumes MinIO uses at startup[0m
+[0;31m[0m[0;31m-# The command uses MinIO expansion notation {x...y} to denote a[0m
+[0;31m[0m[0;31m-# sequential series.[0m
+[0;31m[0m #
+[0;31m-# The following example covers four MinIO hosts[0m
+[0;31m[0m[0;31m-# with 4 drives each at the specified hostname and drive locations.[0m
+[0;31m[0m[0;31m-# The command includes the port that each MinIO server listens on[0m
+[0;31m[0m[0;31m-# (default 9000)[0m
+[0;31m[0m[0;32m+# Ansible managed: minio.env.j2 modified on Date:  2022-12-14 19:27:15 by User: tobkern on Host: srv1.tuxsupport.de[0m
+[0;32m[0m[0;32m+#[0m
+[0;32m[0m 
+[0;31m-MINIO_VOLUMES="/mnt/data1/minio/ /mnt/data2/minio/"[0m
+[0;31m[0m[0;32m+# Minio local/remote volumes.[0m
+[0;32m[0m[0;32m+MINIO_VOLUMES="/mnt/data1/minio /mnt/data2/minio"[0m
+[0;32m[0m[0;32m+# Minio cli options.[0m
+[0;32m[0m[0;32m+MINIO_OPTS="--address :90 "[0m
+[0;32m[0m 
+[0;31m-# Set all MinIO server options[0m
+[0;31m[0m[0;31m-#[0m
+[0;31m[0m[0;31m-# The following explicitly sets the MinIO Console listen address to[0m
+[0;31m[0m[0;31m-# port 9001 on all network interfaces. The default behavior is dynamic[0m
+[0;31m[0m[0;31m-# port selection.[0m
+[0;31m[0m 
+[0;31m-MINIO_OPTS="/usr/local/bin/minio --console-address :92"[0m
+[0;31m[0m[0;31m-[0m
+[0;31m[0m[0;31m-# Set the root username. This user has unrestricted permissions to[0m
+[0;31m[0m[0;31m-# perform S3 and administrative API operations on any resource in the[0m
+[0;31m[0m[0;31m-# deployment.[0m
+[0;31m[0m[0;31m-#[0m
+[0;31m[0m[0;31m-# Defer to your organizations requirements for superadmin user name.[0m
+[0;31m[0m[0;31m-[0m
+[0;31m[0m[0;31m-MINIO_ROOT_USER="minioadmin"[0m
+[0;31m[0m[0;31m-[0m
+[0;31m[0m[0;31m-# Set the root password[0m
+[0;31m[0m[0;31m-#[0m
+[0;31m[0m[0;31m-# Use a long, random, unique string that meets your organizations[0m
+[0;31m[0m[0;31m-# requirements for passwords.[0m
+[0;31m[0m[0;31m-[0m
+[0;31m[0m[0;31m-MINIO_ROOT_PASSWORD="R72#lh45"[0m
+[0;31m[0m[0;31m-[0m
+[0;31m[0m[0;31m-# Set to the URL of the load balancer for the MinIO deployment[0m
+[0;31m[0m[0;31m-# This value *must* match across all MinIO servers. If you do[0m
+[0;31m[0m[0;31m-# not have a load balancer, set this value to to any *one* of the[0m
+[0;31m[0m[0;31m-# MinIO hosts in the deployment as a temporary measure.[0m
+[0;31m[0m[0;31m-MINIO_SERVER_URL="http://192.168.4.41:91"[0m
+[0;31m[0m
+
+2023-01-01 13:42:51,226 p=1782206 u=tobkern n=ansible | changed: [localhost]
+2023-01-01 13:42:51,263 p=1782206 u=tobkern n=ansible | TASK [ansible-role-minio-server : Create the Minio server systemd config] *************************************************************************************
+2023-01-01 13:42:54,271 p=1782206 u=tobkern n=ansible | [0;31m--- before: /etc/systemd/system/minio.service[0m
+[0;31m[0m[0;32m+++ after: /home/tobkern/.ansible/tmp/ansible-local-1782206rmb9lb3b/tmpvm9rkdeg/minio.service.j2[0m
+[0;32m[0m[0;36m@@ -1,36 +1,51 @@[0m
+[0;36m[0m[0;32m+#[0m
+[0;32m[0m[0;32m+# Ansible managed: minio.service.j2 modified on Date:  2022-12-14 19:27:15 by User: tobkern on Host: srv1.tuxsupport.de[0m
+[0;32m[0m[0;32m+#[0m
+[0;32m[0m[0;32m+[0m
+[0;32m[0m [Unit]
+[0;31m-Description=MinIO[0m
+[0;31m[0m[0;31m-Documentation=https://docs.min.io[0m
+[0;31m[0m[0;32m+Description=Minio[0m
+[0;32m[0m[0;32m+Documentation=https://docs.minio.io[0m
+[0;32m[0m Wants=network-online.target
+ After=network-online.target
+ AssertFileIsExecutable=/usr/local/bin/minio
+ 
+[0;32m+# Avoid noisy crashloops[0m
+[0;32m[0m[0;32m+StartLimitIntervalSec=60[0m
+[0;32m[0m[0;32m+StartLimitBurst=5[0m
+[0;32m[0m[0;32m+[0m
+[0;32m[0m [Service]
+[0;31m-WorkingDirectory=/usr/local[0m
+[0;31m[0m[0;32m+WorkingDirectory=/usr/local/[0m
+[0;32m[0m 
+[0;31m-User=minio-user[0m
+[0;31m[0m[0;31m-Group=minio-user[0m
+[0;31m[0m[0;31m-ProtectProc=invisible[0m
+[0;31m[0m[0;32m+User=minio[0m
+[0;32m[0m[0;32m+Group=minio[0m
+[0;32m[0m 
+[0;31m-EnvironmentFile=-/etc/default/minio[0m
+[0;31m[0m[0;31m-ExecStartPre=/bin/bash -c "if [ -z \"${MINIO_VOLUMES}\" ]; then echo \"Variable MINIO_VOLUMES not set in /etc/default/minio\"; exit 1; fi"[0m
+[0;31m[0m[0;31m-#ExecStart=/usr/local/bin/minio server /root/minio --console-address :92 --address :91[0m
+[0;31m[0m[0;31m-#$MINIO_VOLUMES[0m
+[0;31m[0m[0;32m+PermissionsStartOnly=true[0m
+[0;32m[0m 
+[0;31m-# Let systemd restart this service always[0m
+[0;31m[0m[0;32m+EnvironmentFile=/etc/default/minio[0m
+[0;32m[0m[0;32m+ExecStartPre=/bin/bash -c "[ -n \"${MINIO_VOLUMES}\" ] || echo \"Variable MINIO_VOLUMES not set in /etc/default/minio\""[0m
+[0;32m[0m[0;32m+[0m
+[0;32m[0m[0;32m+ExecStart=/usr/local/bin/minio server $MINIO_OPTS $MINIO_VOLUMES[0m
+[0;32m[0m[0;32m+[0m
+[0;32m[0m[0;32m+# Let systemd always restart this service, in limits defined by StartLimitIntervalSec and StartLimitBurst.[0m
+[0;32m[0m Restart=always
+ 
+[0;32m+StandardOutput=journal[0m
+[0;32m[0m[0;32m+StandardError=inherit[0m
+[0;32m[0m[0;32m+[0m
+[0;32m[0m # Specifies the maximum file descriptor number that can be opened by this process
+[0;31m-LimitNOFILE=1048576[0m
+[0;31m[0m[0;31m-[0m
+[0;31m[0m[0;31m-# Specifies the maximum number of threads this process can create[0m
+[0;31m[0m[0;31m-TasksMax=infinity[0m
+[0;31m[0m[0;32m+LimitNOFILE=65536[0m
+[0;32m[0m 
+ # Disable timeout logic and wait until process is stopped
+[0;31m-TimeoutStopSec=infinity[0m
+[0;31m[0m[0;32m+TimeoutStopSec=0[0m
+[0;32m[0m[0;32m+[0m
+[0;32m[0m[0;32m+# SIGTERM signal is used to stop Minio[0m
+[0;32m[0m[0;32m+KillSignal=SIGTERM[0m
+[0;32m[0m[0;32m+[0m
+[0;32m[0m SendSIGKILL=no
+[0;32m+[0m
+[0;32m[0m[0;32m+SuccessExitStatus=0[0m
+[0;32m[0m[0;32m+[0m
+[0;32m[0m[0;32m+AmbientCapabilities=CAP_NET_BIND_SERVICE[0m
+[0;32m[0m 
+ [Install]
+ WantedBy=multi-user.target
+[0;31m-[0m
+[0;31m[0m[0;31m-# Built for ${project.name}-${project.version} (${project.name})[0m
+[0;31m[0m
+
+2023-01-01 13:42:54,273 p=1782206 u=tobkern n=ansible | changed: [localhost]
+2023-01-01 13:42:54,311 p=1782206 u=tobkern n=ansible | TASK [ansible-role-minio-server : Create the Minio server init.d config] **************************************************************************************
+2023-01-01 13:42:54,351 p=1782206 u=tobkern n=ansible | skipping: [localhost]
+2023-01-01 13:42:54,393 p=1782206 u=tobkern n=ansible | TASK [ansible-role-minio-server : Enable and start the Minio service] *****************************************************************************************
+2023-01-01 13:42:56,414 p=1782206 u=tobkern n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "msg": "Error loading unit file 'minio': org.freedesktop.systemd1.BadUnitSetting \"Unit minio.service has a bad unit file setting.\""}
+2023-01-01 13:42:56,417 p=1782206 u=tobkern n=ansible | RUNNING HANDLER [ansible-role-minio-server : reload minio systemd] ********************************************************************************************
+2023-01-01 13:42:56,419 p=1782206 u=tobkern n=ansible | RUNNING HANDLER [ansible-role-minio-server : restart minio] ***************************************************************************************************
+2023-01-01 13:42:56,423 p=1782206 u=tobkern n=ansible | PLAY RECAP ****************************************************************************************************************************************************
+2023-01-01 13:42:56,423 p=1782206 u=tobkern n=ansible | localhost                  : ok=11   changed=5    unreachable=0    failed=1    skipped=3    rescued=0    ignored=0   
+2023-01-01 13:51:47,064 p=1785832 u=tobkern n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2023-01-01 13:51:47,416 p=1785832 u=tobkern n=ansible | [WARNING]: Skipping callback plugin 'timer', unable to load
+
+2023-01-01 13:51:47,418 p=1785832 u=tobkern n=ansible | [WARNING]: Skipping callback plugin 'profile_tasks', unable to load
+
+2023-01-01 13:51:47,419 p=1785832 u=tobkern n=ansible | [WARNING]: Skipping callback plugin 'profile_roles', unable to load
+
+2023-01-01 13:51:47,424 p=1785832 u=tobkern n=ansible | PLAY [Play test Playbook] *************************************************************************************************************************************
+2023-01-01 13:51:47,456 p=1785832 u=tobkern n=ansible | TASK [Gathering Facts] ****************************************************************************************************************************************
+2023-01-01 13:51:54,638 p=1785832 u=tobkern n=ansible | ok: [localhost]
+2023-01-01 13:51:54,706 p=1785832 u=tobkern n=ansible | TASK [ansible-role-minio-server : Add sni support to legacy python installations] *****************************************************************************
+2023-01-01 13:51:54,773 p=1785832 u=tobkern n=ansible | skipping: [localhost]
+2023-01-01 13:51:54,811 p=1785832 u=tobkern n=ansible | TASK [ansible-role-minio-server : include_tasks] **************************************************************************************************************
+2023-01-01 13:51:54,921 p=1785832 u=tobkern n=ansible | included: /opt/dev/ansible/roles/ansible-role-minio-server/tasks/install-server.yml for localhost
+2023-01-01 13:51:54,957 p=1785832 u=tobkern n=ansible | TASK [ansible-role-minio-server : Compose the Minio server download base url] *********************************************************************************
+2023-01-01 13:51:55,047 p=1785832 u=tobkern n=ansible | ok: [localhost]
+2023-01-01 13:51:55,086 p=1785832 u=tobkern n=ansible | TASK [ansible-role-minio-server : Compose the Minio server download url with lastest release] *****************************************************************
+2023-01-01 13:51:55,173 p=1785832 u=tobkern n=ansible | ok: [localhost]
+2023-01-01 13:51:55,220 p=1785832 u=tobkern n=ansible | TASK [ansible-role-minio-server : Compose the Minio server download url with release] *************************************************************************
+2023-01-01 13:51:55,301 p=1785832 u=tobkern n=ansible | skipping: [localhost]
+2023-01-01 13:51:55,381 p=1785832 u=tobkern n=ansible | TASK [ansible-role-minio-server : Get the Minio server checksum for amd64 architecture] ***********************************************************************
+2023-01-01 13:51:56,305 p=1785832 u=tobkern n=ansible | ok: [localhost]
+2023-01-01 13:51:56,345 p=1785832 u=tobkern n=ansible | TASK [ansible-role-minio-server : Create Minio group] *********************************************************************************************************
+2023-01-01 13:51:57,567 p=1785832 u=tobkern n=ansible | ok: [localhost]
+2023-01-01 13:51:57,607 p=1785832 u=tobkern n=ansible | TASK [ansible-role-minio-server : Create Minio user] **********************************************************************************************************
+2023-01-01 13:51:59,033 p=1785832 u=tobkern n=ansible | ok: [localhost]
+2023-01-01 13:51:59,071 p=1785832 u=tobkern n=ansible | TASK [ansible-role-minio-server : Create the Minio data storage directories] **********************************************************************************
+2023-01-01 13:52:00,266 p=1785832 u=tobkern n=ansible | ok: [localhost] => (item=/mnt/data1/minio)
+2023-01-01 13:52:01,156 p=1785832 u=tobkern n=ansible | ok: [localhost] => (item=/mnt/data2/minio)
+2023-01-01 13:52:01,200 p=1785832 u=tobkern n=ansible | TASK [ansible-role-minio-server : Download the Minio server] **************************************************************************************************
+2023-01-01 13:52:03,845 p=1785832 u=tobkern n=ansible | ok: [localhost]
+2023-01-01 13:52:03,887 p=1785832 u=tobkern n=ansible | TASK [ansible-role-minio-server : Generate the Minio server envfile] ******************************************************************************************
+2023-01-01 13:52:05,898 p=1785832 u=tobkern n=ansible | ok: [localhost]
+2023-01-01 13:52:05,940 p=1785832 u=tobkern n=ansible | TASK [ansible-role-minio-server : Create the Minio server systemd config] *************************************************************************************
+2023-01-01 13:52:07,585 p=1785832 u=tobkern n=ansible | ok: [localhost]
+2023-01-01 13:52:07,623 p=1785832 u=tobkern n=ansible | TASK [ansible-role-minio-server : Create the Minio server init.d config] **************************************************************************************
+2023-01-01 13:52:07,665 p=1785832 u=tobkern n=ansible | skipping: [localhost]
+2023-01-01 13:52:07,704 p=1785832 u=tobkern n=ansible | TASK [ansible-role-minio-server : Enable and start the Minio service] *****************************************************************************************
+2023-01-01 13:52:09,713 p=1785832 u=tobkern n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "msg": "Error loading unit file 'minio': org.freedesktop.systemd1.BadUnitSetting \"Unit minio.service has a bad unit file setting.\""}
+2023-01-01 13:52:09,719 p=1785832 u=tobkern n=ansible | PLAY RECAP ****************************************************************************************************************************************************
+2023-01-01 13:52:09,720 p=1785832 u=tobkern n=ansible | localhost                  : ok=11   changed=0    unreachable=0    failed=1    skipped=3    rescued=0    ignored=0   
+2023-01-01 13:54:20,012 p=1787388 u=tobkern n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2023-01-01 13:54:20,195 p=1787388 u=tobkern n=ansible | ERROR! the role 'ansible-role-minio-server' was not found in /opt/dev/ansible/roles/ansible-role-minio-server/tests/roles:/home/tobkern/.ansible/roles:/usr/share/ansible/roles:/etc/ansible/roles:/opt/dev/ansible/roles/ansible-role-minio-server:/opt/dev/ansible/roles/ansible-role-minio-server/tests
+
+The error appears to be in '/opt/dev/ansible/roles/ansible-role-minio-server/tests/playbook.yml': line 9, column 5, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  roles:
+  - ansible-role-minio-server
+    ^ here
+
+2023-01-01 13:54:53,164 p=1787507 u=tobkern n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2023-01-01 13:54:53,531 p=1787507 u=tobkern n=ansible | [WARNING]: Skipping callback plugin 'timer', unable to load
+
+2023-01-01 13:54:53,533 p=1787507 u=tobkern n=ansible | [WARNING]: Skipping callback plugin 'profile_tasks', unable to load
+
+2023-01-01 13:54:53,534 p=1787507 u=tobkern n=ansible | [WARNING]: Skipping callback plugin 'profile_roles', unable to load
+
+2023-01-01 13:54:53,540 p=1787507 u=tobkern n=ansible | PLAY [Play test Playbook] *************************************************************************************************************************************
+2023-01-01 13:54:53,572 p=1787507 u=tobkern n=ansible | TASK [Gathering Facts] ****************************************************************************************************************************************
+2023-01-01 13:55:00,820 p=1787507 u=tobkern n=ansible | ok: [localhost]
+2023-01-01 13:55:00,889 p=1787507 u=tobkern n=ansible | TASK [ansible-role-minio-server : Add sni support to legacy python installations] *****************************************************************************
+2023-01-01 13:55:00,952 p=1787507 u=tobkern n=ansible | skipping: [localhost]
+2023-01-01 13:55:00,991 p=1787507 u=tobkern n=ansible | TASK [ansible-role-minio-server : include_tasks] **************************************************************************************************************
+2023-01-01 13:55:01,096 p=1787507 u=tobkern n=ansible | included: /opt/dev/ansible/roles/ansible-role-minio-server/tasks/install-server.yml for localhost
+2023-01-01 13:55:01,136 p=1787507 u=tobkern n=ansible | TASK [ansible-role-minio-server : Compose the Minio server download base url] *********************************************************************************
+2023-01-01 13:55:01,230 p=1787507 u=tobkern n=ansible | ok: [localhost]
+2023-01-01 13:55:01,270 p=1787507 u=tobkern n=ansible | TASK [ansible-role-minio-server : Compose the Minio server download url with lastest release] *****************************************************************
+2023-01-01 13:55:01,360 p=1787507 u=tobkern n=ansible | ok: [localhost]
+2023-01-01 13:55:01,410 p=1787507 u=tobkern n=ansible | TASK [ansible-role-minio-server : Compose the Minio server download url with release] *************************************************************************
+2023-01-01 13:55:01,481 p=1787507 u=tobkern n=ansible | skipping: [localhost]
+2023-01-01 13:55:01,556 p=1787507 u=tobkern n=ansible | TASK [ansible-role-minio-server : Get the Minio server checksum for amd64 architecture] ***********************************************************************
+2023-01-01 13:55:02,471 p=1787507 u=tobkern n=ansible | ok: [localhost]
+2023-01-01 13:55:02,507 p=1787507 u=tobkern n=ansible | TASK [ansible-role-minio-server : Create Minio group] *********************************************************************************************************
+2023-01-01 13:55:03,733 p=1787507 u=tobkern n=ansible | ok: [localhost]
+2023-01-01 13:55:03,772 p=1787507 u=tobkern n=ansible | TASK [ansible-role-minio-server : Create Minio user] **********************************************************************************************************
+2023-01-01 13:55:05,181 p=1787507 u=tobkern n=ansible | ok: [localhost]
+2023-01-01 13:55:05,219 p=1787507 u=tobkern n=ansible | TASK [ansible-role-minio-server : Create the Minio data storage directories] **********************************************************************************
+2023-01-01 13:55:06,438 p=1787507 u=tobkern n=ansible | ok: [localhost] => (item=/mnt/data1/minio)
+2023-01-01 13:55:07,305 p=1787507 u=tobkern n=ansible | ok: [localhost] => (item=/mnt/data2/minio)
+2023-01-01 13:55:07,345 p=1787507 u=tobkern n=ansible | TASK [ansible-role-minio-server : Download the Minio server] **************************************************************************************************
+2023-01-01 13:55:09,938 p=1787507 u=tobkern n=ansible | ok: [localhost]
+2023-01-01 13:55:09,979 p=1787507 u=tobkern n=ansible | TASK [ansible-role-minio-server : Generate the Minio server envfile] ******************************************************************************************
+2023-01-01 13:55:11,941 p=1787507 u=tobkern n=ansible | ok: [localhost]
+2023-01-01 13:55:11,982 p=1787507 u=tobkern n=ansible | TASK [ansible-role-minio-server : Create the Minio server systemd config] *************************************************************************************
+2023-01-01 13:55:13,589 p=1787507 u=tobkern n=ansible | ok: [localhost]
+2023-01-01 13:55:13,626 p=1787507 u=tobkern n=ansible | TASK [ansible-role-minio-server : Create the Minio server init.d config] **************************************************************************************
+2023-01-01 13:55:13,667 p=1787507 u=tobkern n=ansible | skipping: [localhost]
+2023-01-01 13:55:13,709 p=1787507 u=tobkern n=ansible | TASK [ansible-role-minio-server : Enable and start the Minio service] *****************************************************************************************
+2023-01-01 13:55:15,719 p=1787507 u=tobkern n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "msg": "Error loading unit file 'minio': org.freedesktop.systemd1.BadUnitSetting \"Unit minio.service has a bad unit file setting.\""}
+2023-01-01 13:55:15,725 p=1787507 u=tobkern n=ansible | PLAY RECAP ****************************************************************************************************************************************************
+2023-01-01 13:55:15,726 p=1787507 u=tobkern n=ansible | localhost                  : ok=11   changed=0    unreachable=0    failed=1    skipped=3    rescued=0    ignored=0   
+2023-01-01 13:56:19,209 p=1789133 u=tobkern n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2023-01-01 13:56:19,571 p=1789133 u=tobkern n=ansible | [WARNING]: Skipping callback plugin 'timer', unable to load
+
+2023-01-01 13:56:19,572 p=1789133 u=tobkern n=ansible | [WARNING]: Skipping callback plugin 'profile_tasks', unable to load
+
+2023-01-01 13:56:19,573 p=1789133 u=tobkern n=ansible | [WARNING]: Skipping callback plugin 'profile_roles', unable to load
+
+2023-01-01 13:56:19,578 p=1789133 u=tobkern n=ansible | PLAY [Play test Playbook] *************************************************************************************************************************************
+2023-01-01 13:56:19,610 p=1789133 u=tobkern n=ansible | TASK [Gathering Facts] ****************************************************************************************************************************************
+2023-01-01 13:56:26,333 p=1789133 u=tobkern n=ansible | ok: [localhost]
+2023-01-01 13:56:26,401 p=1789133 u=tobkern n=ansible | TASK [ansible-role-minio-server : Add sni support to legacy python installations] *****************************************************************************
+2023-01-01 13:56:26,467 p=1789133 u=tobkern n=ansible | skipping: [localhost]
+2023-01-01 13:56:26,507 p=1789133 u=tobkern n=ansible | TASK [ansible-role-minio-server : include_tasks] **************************************************************************************************************
+2023-01-01 13:56:26,613 p=1789133 u=tobkern n=ansible | included: /opt/dev/ansible/roles/ansible-role-minio-server/tasks/install-server.yml for localhost
+2023-01-01 13:56:26,651 p=1789133 u=tobkern n=ansible | TASK [ansible-role-minio-server : Compose the Minio server download base url] *********************************************************************************
+2023-01-01 13:56:26,740 p=1789133 u=tobkern n=ansible | ok: [localhost]
+2023-01-01 13:56:26,779 p=1789133 u=tobkern n=ansible | TASK [ansible-role-minio-server : Compose the Minio server download url with lastest release] *****************************************************************
+2023-01-01 13:56:26,886 p=1789133 u=tobkern n=ansible | ok: [localhost]
+2023-01-01 13:56:26,930 p=1789133 u=tobkern n=ansible | TASK [ansible-role-minio-server : Compose the Minio server download url with release] *************************************************************************
+2023-01-01 13:56:27,005 p=1789133 u=tobkern n=ansible | skipping: [localhost]
+2023-01-01 13:56:27,080 p=1789133 u=tobkern n=ansible | TASK [ansible-role-minio-server : Get the Minio server checksum for amd64 architecture] ***********************************************************************
+2023-01-01 13:56:27,963 p=1789133 u=tobkern n=ansible | ok: [localhost]
+2023-01-01 13:56:28,000 p=1789133 u=tobkern n=ansible | TASK [ansible-role-minio-server : Create Minio group] *********************************************************************************************************
+2023-01-01 13:56:29,221 p=1789133 u=tobkern n=ansible | ok: [localhost]
+2023-01-01 13:56:29,258 p=1789133 u=tobkern n=ansible | TASK [ansible-role-minio-server : Create Minio user] **********************************************************************************************************
+2023-01-01 13:56:30,674 p=1789133 u=tobkern n=ansible | ok: [localhost]
+2023-01-01 13:56:30,713 p=1789133 u=tobkern n=ansible | TASK [ansible-role-minio-server : Create the Minio data storage directories] **********************************************************************************
+2023-01-01 13:56:31,988 p=1789133 u=tobkern n=ansible | ok: [localhost] => (item=/mnt/data1/minio)
+2023-01-01 13:56:32,874 p=1789133 u=tobkern n=ansible | ok: [localhost] => (item=/mnt/data2/minio)
+2023-01-01 13:56:32,915 p=1789133 u=tobkern n=ansible | TASK [ansible-role-minio-server : Download the Minio server] **************************************************************************************************
+2023-01-01 13:56:35,547 p=1789133 u=tobkern n=ansible | ok: [localhost]
+2023-01-01 13:56:35,587 p=1789133 u=tobkern n=ansible | TASK [ansible-role-minio-server : Generate the Minio server envfile] ******************************************************************************************
+2023-01-01 13:56:37,485 p=1789133 u=tobkern n=ansible | ok: [localhost]
+2023-01-01 13:56:37,522 p=1789133 u=tobkern n=ansible | TASK [ansible-role-minio-server : Create the Minio server systemd config] *************************************************************************************
+2023-01-01 13:56:39,081 p=1789133 u=tobkern n=ansible | ok: [localhost]
+2023-01-01 13:56:39,119 p=1789133 u=tobkern n=ansible | TASK [ansible-role-minio-server : Create the Minio server init.d config] **************************************************************************************
+2023-01-01 13:56:39,158 p=1789133 u=tobkern n=ansible | skipping: [localhost]
+2023-01-01 13:56:39,199 p=1789133 u=tobkern n=ansible | TASK [ansible-role-minio-server : Enable and start the Minio service] *****************************************************************************************
+2023-01-01 13:56:41,198 p=1789133 u=tobkern n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "msg": "Error loading unit file 'minio': org.freedesktop.systemd1.BadUnitSetting \"Unit minio.service has a bad unit file setting.\""}
+2023-01-01 13:56:41,206 p=1789133 u=tobkern n=ansible | PLAY RECAP ****************************************************************************************************************************************************
+2023-01-01 13:56:41,207 p=1789133 u=tobkern n=ansible | localhost                  : ok=11   changed=0    unreachable=0    failed=1    skipped=3    rescued=0    ignored=0   
+2023-01-01 13:58:44,668 p=1790799 u=tobkern n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2023-01-01 13:58:45,031 p=1790799 u=tobkern n=ansible | [WARNING]: Skipping callback plugin 'timer', unable to load
+
+2023-01-01 13:58:45,033 p=1790799 u=tobkern n=ansible | [WARNING]: Skipping callback plugin 'profile_tasks', unable to load
+
+2023-01-01 13:58:45,034 p=1790799 u=tobkern n=ansible | [WARNING]: Skipping callback plugin 'profile_roles', unable to load
+
+2023-01-01 13:58:45,039 p=1790799 u=tobkern n=ansible | PLAY [Play test Playbook] *************************************************************************************************************************************
+2023-01-01 13:58:45,071 p=1790799 u=tobkern n=ansible | TASK [Gathering Facts] ****************************************************************************************************************************************
+2023-01-01 13:58:52,277 p=1790799 u=tobkern n=ansible | ok: [localhost]
+2023-01-01 13:58:52,344 p=1790799 u=tobkern n=ansible | TASK [ansible-role-minio-server : Add sni support to legacy python installations] *****************************************************************************
+2023-01-01 13:58:52,408 p=1790799 u=tobkern n=ansible | skipping: [localhost]
+2023-01-01 13:58:52,444 p=1790799 u=tobkern n=ansible | TASK [ansible-role-minio-server : include_tasks] **************************************************************************************************************
+2023-01-01 13:58:52,578 p=1790799 u=tobkern n=ansible | included: /opt/dev/ansible/roles/ansible-role-minio-server/tasks/install-server.yml for localhost
+2023-01-01 13:58:52,613 p=1790799 u=tobkern n=ansible | TASK [ansible-role-minio-server : Compose the Minio server download base url] *********************************************************************************
+2023-01-01 13:58:52,700 p=1790799 u=tobkern n=ansible | ok: [localhost]
+2023-01-01 13:58:52,736 p=1790799 u=tobkern n=ansible | TASK [ansible-role-minio-server : Compose the Minio server download url with lastest release] *****************************************************************
+2023-01-01 13:58:52,826 p=1790799 u=tobkern n=ansible | ok: [localhost]
+2023-01-01 13:58:52,870 p=1790799 u=tobkern n=ansible | TASK [ansible-role-minio-server : Compose the Minio server download url with release] *************************************************************************
+2023-01-01 13:58:52,952 p=1790799 u=tobkern n=ansible | skipping: [localhost]
+2023-01-01 13:58:53,025 p=1790799 u=tobkern n=ansible | TASK [ansible-role-minio-server : Get the Minio server checksum for amd64 architecture] ***********************************************************************
+2023-01-01 13:58:53,967 p=1790799 u=tobkern n=ansible | ok: [localhost]
+2023-01-01 13:58:54,005 p=1790799 u=tobkern n=ansible | TASK [ansible-role-minio-server : Create Minio group] *********************************************************************************************************
+2023-01-01 13:58:55,257 p=1790799 u=tobkern n=ansible | ok: [localhost]
+2023-01-01 13:58:55,300 p=1790799 u=tobkern n=ansible | TASK [ansible-role-minio-server : Create Minio user] **********************************************************************************************************
+2023-01-01 13:58:56,715 p=1790799 u=tobkern n=ansible | ok: [localhost]
+2023-01-01 13:58:56,755 p=1790799 u=tobkern n=ansible | TASK [ansible-role-minio-server : Create the Minio data storage directories] **********************************************************************************
+2023-01-01 13:58:58,038 p=1790799 u=tobkern n=ansible | ok: [localhost] => (item=/mnt/data1/minio)
+2023-01-01 13:58:58,883 p=1790799 u=tobkern n=ansible | ok: [localhost] => (item=/mnt/data2/minio)
+2023-01-01 13:58:58,921 p=1790799 u=tobkern n=ansible | TASK [ansible-role-minio-server : Download the Minio server] **************************************************************************************************
+2023-01-01 13:59:01,470 p=1790799 u=tobkern n=ansible | ok: [localhost]
+2023-01-01 13:59:01,509 p=1790799 u=tobkern n=ansible | TASK [ansible-role-minio-server : Generate the Minio server envfile] ******************************************************************************************
+2023-01-01 13:59:03,430 p=1790799 u=tobkern n=ansible | ok: [localhost]
+2023-01-01 13:59:03,469 p=1790799 u=tobkern n=ansible | TASK [ansible-role-minio-server : Create the Minio server systemd config] *************************************************************************************
+2023-01-01 13:59:06,136 p=1790799 u=tobkern n=ansible | [0;31m--- before[0m
+[0;31m[0m[0;32m+++ after: /home/tobkern/.ansible/tmp/ansible-local-1790799lczgytpq/tmp4urrdmdq/minio.service.j2[0m
+[0;32m[0m[0;36m@@ -0,0 +1,51 @@[0m
+[0;36m[0m[0;32m+#[0m
+[0;32m[0m[0;32m+# Ansible managed: minio.service.j2 modified on Date:  2022-12-14 19:27:15 by User: tobkern on Host: srv1.tuxsupport.de[0m
+[0;32m[0m[0;32m+#[0m
+[0;32m[0m[0;32m+[0m
+[0;32m[0m[0;32m+[Unit][0m
+[0;32m[0m[0;32m+Description=Minio[0m
+[0;32m[0m[0;32m+Documentation=https://docs.minio.io[0m
+[0;32m[0m[0;32m+Wants=network-online.target[0m
+[0;32m[0m[0;32m+After=network-online.target[0m
+[0;32m[0m[0;32m+AssertFileIsExecutable=/usr/local/bin/minio[0m
+[0;32m[0m[0;32m+[0m
+[0;32m[0m[0;32m+# Avoid noisy crashloops[0m
+[0;32m[0m[0;32m+StartLimitIntervalSec=60[0m
+[0;32m[0m[0;32m+StartLimitBurst=5[0m
+[0;32m[0m[0;32m+[0m
+[0;32m[0m[0;32m+[Service][0m
+[0;32m[0m[0;32m+WorkingDirectory=/usr/local/[0m
+[0;32m[0m[0;32m+[0m
+[0;32m[0m[0;32m+User=minio[0m
+[0;32m[0m[0;32m+Group=minio[0m
+[0;32m[0m[0;32m+[0m
+[0;32m[0m[0;32m+PermissionsStartOnly=true[0m
+[0;32m[0m[0;32m+[0m
+[0;32m[0m[0;32m+EnvironmentFile=/etc/default/minio[0m
+[0;32m[0m[0;32m+ExecStartPre=/bin/bash -c "[ -n \"${MINIO_VOLUMES}\" ] || echo \"Variable MINIO_VOLUMES not set in /etc/default/minio\""[0m
+[0;32m[0m[0;32m+[0m
+[0;32m[0m[0;32m+ExecStart=/usr/local/bin/minio server $MINIO_OPTS $MINIO_VOLUMES[0m
+[0;32m[0m[0;32m+[0m
+[0;32m[0m[0;32m+# Let systemd always restart this service, in limits defined by StartLimitIntervalSec and StartLimitBurst.[0m
+[0;32m[0m[0;32m+Restart=always[0m
+[0;32m[0m[0;32m+[0m
+[0;32m[0m[0;32m+StandardOutput=journal[0m
+[0;32m[0m[0;32m+StandardError=inherit[0m
+[0;32m[0m[0;32m+[0m
+[0;32m[0m[0;32m+# Specifies the maximum file descriptor number that can be opened by this process[0m
+[0;32m[0m[0;32m+LimitNOFILE=65536[0m
+[0;32m[0m[0;32m+[0m
+[0;32m[0m[0;32m+# Disable timeout logic and wait until process is stopped[0m
+[0;32m[0m[0;32m+TimeoutStopSec=0[0m
+[0;32m[0m[0;32m+[0m
+[0;32m[0m[0;32m+# SIGTERM signal is used to stop Minio[0m
+[0;32m[0m[0;32m+KillSignal=SIGTERM[0m
+[0;32m[0m[0;32m+[0m
+[0;32m[0m[0;32m+SendSIGKILL=no[0m
+[0;32m[0m[0;32m+[0m
+[0;32m[0m[0;32m+SuccessExitStatus=0[0m
+[0;32m[0m[0;32m+[0m
+[0;32m[0m[0;32m+AmbientCapabilities=CAP_NET_BIND_SERVICE[0m
+[0;32m[0m[0;32m+[0m
+[0;32m[0m[0;32m+[Install][0m
+[0;32m[0m[0;32m+WantedBy=multi-user.target[0m
+[0;32m[0m
+
+2023-01-01 13:59:06,139 p=1790799 u=tobkern n=ansible | changed: [localhost]
+2023-01-01 13:59:06,174 p=1790799 u=tobkern n=ansible | TASK [ansible-role-minio-server : Create the Minio server init.d config] **************************************************************************************
+2023-01-01 13:59:06,215 p=1790799 u=tobkern n=ansible | skipping: [localhost]
+2023-01-01 13:59:06,258 p=1790799 u=tobkern n=ansible | TASK [ansible-role-minio-server : Enable and start the Minio service] *****************************************************************************************
+2023-01-01 13:59:08,273 p=1790799 u=tobkern n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "msg": "Error loading unit file 'minio': org.freedesktop.systemd1.BadUnitSetting \"Unit minio.service has a bad unit file setting.\""}
+2023-01-01 13:59:08,275 p=1790799 u=tobkern n=ansible | RUNNING HANDLER [ansible-role-minio-server : reload minio systemd] ********************************************************************************************
+2023-01-01 13:59:08,277 p=1790799 u=tobkern n=ansible | RUNNING HANDLER [ansible-role-minio-server : restart minio] ***************************************************************************************************
+2023-01-01 13:59:08,281 p=1790799 u=tobkern n=ansible | PLAY RECAP ****************************************************************************************************************************************************
+2023-01-01 13:59:08,282 p=1790799 u=tobkern n=ansible | localhost                  : ok=11   changed=1    unreachable=0    failed=1    skipped=3    rescued=0    ignored=0   
+2023-01-01 14:34:12,979 p=1803756 u=tobkern n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names to new standard, use callbacks_enabled instead. This feature will be removed from ansible-
+core in version 2.15. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2023-01-01 14:34:13,167 p=1803756 u=tobkern n=ansible | ERROR! 'pre-tasks' is not a valid attribute for a Play
+
+The error appears to be in '/opt/dev/ansible/ansible-home-tobkern/playbooks/sicherheit/aide.yml': line 2, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+- name: Install aide
+  ^ here
+
+2023-01-01 14:34:51,857 p=1803887 u=tobkern n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names to new standard, use callbacks_enabled instead. This feature will be removed from ansible-
+core in version 2.15. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2023-01-01 14:34:52,046 p=1803887 u=tobkern n=ansible | ERROR! the role 'ansible-role-aide' was not found in /opt/dev/ansible/ansible-home-tobkern/playbooks/sicherheit/roles:/opt/dev/ansible/roles/ansible-role-minio-server:/opt/dev/ansible/ansible-home-tobkern/playbooks/sicherheit
+
+The error appears to be in '/opt/dev/ansible/ansible-home-tobkern/playbooks/sicherheit/aide.yml': line 18, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  roles:
+    - ansible-role-aide
+      ^ here
+
+2023-01-01 14:36:34,578 p=1805275 u=tobkern n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names to new standard, 
+use callbacks_enabled instead. This feature will be removed from ansible-core in version 2.15. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2023-01-01 14:36:34,775 p=1805275 u=tobkern n=ansible | ERROR! the role 'ansible-role-aide' was not found in /opt/dev/ansible/ansible-home-tobkern/playbooks/sicherheit/roles:/opt/dev/ansible/roles/ansible-role-minio-server:/opt/dev/ansible/ansible-home-tobkern/playbooks/sicherheit
+
+The error appears to be in '/opt/dev/ansible/ansible-home-tobkern/playbooks/sicherheit/aide.yml': line 18, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  roles:
+    - ansible-role-aide
+      ^ here
+
+2023-01-01 14:37:21,601 p=1805421 u=tobkern n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names to new standard, 
+use callbacks_enabled instead. This feature will be removed from ansible-core in version 2.15. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2023-01-01 14:37:21,794 p=1805421 u=tobkern n=ansible | ERROR! the role 'ansible-role-aide' was not found in /opt/dev/ansible/ansible-home-tobkern/playbooks/sicherheit/roles:/opt/dev/ansible/roles/ansible-role-minio-server:/opt/dev/ansible/ansible-home-tobkern/playbooks/sicherheit
+
+The error appears to be in '/opt/dev/ansible/ansible-home-tobkern/playbooks/sicherheit/aide.yml': line 18, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  roles:
+    - ansible-role-aide
+      ^ here
+
+2023-01-01 14:37:55,168 p=1805575 u=tobkern n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-01-01 14:37:55,364 p=1805575 u=tobkern n=ansible | ERROR! the role 'ansible-role-aide' was not found in /opt/dev/ansible/ansible-home-tobkern/playbooks/sicherheit/roles:/opt/dev/ansible/roles/ansible-role-minio-server:/opt/dev/ansible/ansible-home-tobkern/playbooks/sicherheit
+
+The error appears to be in '/opt/dev/ansible/ansible-home-tobkern/playbooks/sicherheit/aide.yml': line 18, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  roles:
+    - ansible-role-aide
+      ^ here
+
+2023-01-01 14:38:05,553 p=1805622 u=tobkern n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-01-01 14:38:05,922 p=1805622 u=tobkern n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: aide
+
+2023-01-01 14:38:05,923 p=1805622 u=tobkern n=ansible | PLAY [Install aide] ************************************************************
+2023-01-01 14:38:05,923 p=1805622 u=tobkern n=ansible | skipping: no hosts matched
+2023-01-01 14:38:05,924 p=1805622 u=tobkern n=ansible | PLAY RECAP *********************************************************************
+2023-01-01 14:38:05,925 p=1805622 u=tobkern n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 0 seconds
+2023-01-01 14:38:05,925 p=1805622 u=tobkern n=ansible | Sonntag 01 Januar 2023  14:38:05 +0100 (0:00:00.026)       0:00:00.026 ******** 
+2023-01-01 14:38:05,926 p=1805622 u=tobkern n=ansible | =============================================================================== 
+2023-01-01 14:38:05,926 p=1805622 u=tobkern n=ansible | Sonntag 01 Januar 2023  14:38:05 +0100 (0:00:00.024)       0:00:00.024 ******** 
+2023-01-01 14:38:05,927 p=1805622 u=tobkern n=ansible | =============================================================================== 
+2023-01-01 14:38:05,928 p=1805622 u=tobkern n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2023-01-01 14:38:05,928 p=1805622 u=tobkern n=ansible | total ------------------------------------------------------------------- 0.00s
+2023-01-01 14:38:48,016 p=1805765 u=tobkern n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names to new standard, use callbacks_enabled instead. This feature will be removed from ansible-
+core in version 2.15. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2023-01-01 14:38:48,367 p=1805765 u=tobkern n=ansible | PLAY [Install aide] ********************************************************************************************************************************************************
+2023-01-01 14:38:48,399 p=1805765 u=tobkern n=ansible | ERROR! vars file ../../../vars_files/ansible-workstation.yml was not found
+Could not find file on the Ansible Controller.
+If you are using a module and expect the file to exist on the remote, see the remote_src option
+2023-01-01 14:39:58,188 p=1806638 u=tobkern n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names to new standard, use callbacks_enabled instead. This feature will be removed from ansible-
+core in version 2.15. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2023-01-01 14:39:58,537 p=1806638 u=tobkern n=ansible | PLAY [Install aide] ********************************************************************************************************************************************************
+2023-01-01 14:39:58,568 p=1806638 u=tobkern n=ansible | TASK [Gathering Facts] *****************************************************************************************************************************************************
+2023-01-01 14:39:58,569 p=1806638 u=tobkern n=ansible | Sonntag 01 Januar 2023  14:39:58 +0100 (0:00:00.039)       0:00:00.039 ******** 
+2023-01-01 14:39:58,570 p=1806638 u=tobkern n=ansible | Sonntag 01 Januar 2023  14:39:58 +0100 (0:00:00.036)       0:00:00.036 ******** 
+2023-01-01 14:40:04,938 p=1806638 u=tobkern n=ansible | ok: [localhost]
+2023-01-01 14:40:05,034 p=1806638 u=tobkern n=ansible | TASK [Clone configuration directories] *************************************************************************************************************************************
+2023-01-01 14:40:05,035 p=1806638 u=tobkern n=ansible | Sonntag 01 Januar 2023  14:40:05 +0100 (0:00:06.465)       0:00:06.505 ******** 
+2023-01-01 14:40:05,035 p=1806638 u=tobkern n=ansible | Sonntag 01 Januar 2023  14:40:05 +0100 (0:00:06.465)       0:00:06.502 ******** 
+2023-01-01 14:40:05,077 p=1806638 u=tobkern n=ansible | fatal: [localhost]: FAILED! => {"msg": "[{'name': 'ansible-role-aide', 'repo': 'https://github.com/buluma/ansible-role-aide.git', 'dest': '{{ role_path }}/ansible-role-aide'}]: 'role_path' is undefined"}
+2023-01-01 14:40:05,083 p=1806638 u=tobkern n=ansible | PLAY RECAP *****************************************************************************************************************************************************************
+2023-01-01 14:40:05,084 p=1806638 u=tobkern n=ansible | localhost                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-01-01 14:40:05,085 p=1806638 u=tobkern n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 6 seconds
+2023-01-01 14:40:05,085 p=1806638 u=tobkern n=ansible | Sonntag 01 Januar 2023  14:40:05 +0100 (0:00:00.050)       0:00:06.555 ******** 
+2023-01-01 14:40:05,085 p=1806638 u=tobkern n=ansible | =============================================================================== 
+2023-01-01 14:40:05,086 p=1806638 u=tobkern n=ansible | Gathering Facts ----------------------------------------------------------------------------------------------------------------------------------------------------- 6.47s
+2023-01-01 14:40:05,086 p=1806638 u=tobkern n=ansible | Clone configuration directories ------------------------------------------------------------------------------------------------------------------------------------- 0.05s
+2023-01-01 14:40:05,086 p=1806638 u=tobkern n=ansible | Sonntag 01 Januar 2023  14:40:05 +0100 (0:00:00.051)       0:00:06.553 ******** 
+2023-01-01 14:40:05,087 p=1806638 u=tobkern n=ansible | =============================================================================== 
+2023-01-01 14:40:05,087 p=1806638 u=tobkern n=ansible | gather_facts ------------------------------------------------------------ 6.47s
+2023-01-01 14:40:05,087 p=1806638 u=tobkern n=ansible | git --------------------------------------------------------------------- 0.05s
+2023-01-01 14:40:05,088 p=1806638 u=tobkern n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2023-01-01 14:40:05,088 p=1806638 u=tobkern n=ansible | total ------------------------------------------------------------------- 6.52s
+2023-01-01 14:41:03,855 p=1807113 u=tobkern n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names to new standard, use callbacks_enabled instead. This feature will 
+be removed from ansible-core in version 2.15. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2023-01-01 14:41:04,204 p=1807113 u=tobkern n=ansible | PLAY [Install aide] *****************************************************************************************************************************
+2023-01-01 14:41:04,238 p=1807113 u=tobkern n=ansible | TASK [Gathering Facts] **************************************************************************************************************************
+2023-01-01 14:41:04,239 p=1807113 u=tobkern n=ansible | Sonntag 01 Januar 2023  14:41:04 +0100 (0:00:00.042)       0:00:00.042 ******** 
+2023-01-01 14:41:04,240 p=1807113 u=tobkern n=ansible | Sonntag 01 Januar 2023  14:41:04 +0100 (0:00:00.039)       0:00:00.039 ******** 
+2023-01-01 14:41:08,790 p=1807113 u=tobkern n=ansible | ok: [localhost]
+2023-01-01 14:41:08,886 p=1807113 u=tobkern n=ansible | TASK [Clone configuration directories] **********************************************************************************************************
+2023-01-01 14:41:08,886 p=1807113 u=tobkern n=ansible | Sonntag 01 Januar 2023  14:41:08 +0100 (0:00:04.647)       0:00:04.689 ******** 
+2023-01-01 14:41:08,887 p=1807113 u=tobkern n=ansible | Sonntag 01 Januar 2023  14:41:08 +0100 (0:00:04.646)       0:00:04.686 ******** 
+2023-01-01 14:41:08,928 p=1807113 u=tobkern n=ansible | fatal: [localhost]: FAILED! => {"msg": "[{'name': 'ansible-role-aide', 'repo': 'https://github.com/buluma/ansible-role-aide.git', 'dest': '{{ role_path }}/ansible-role-aide'}]: 'role_path' is undefined"}
+2023-01-01 14:41:08,933 p=1807113 u=tobkern n=ansible | PLAY RECAP **************************************************************************************************************************************
+2023-01-01 14:41:08,934 p=1807113 u=tobkern n=ansible | localhost                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-01-01 14:41:08,935 p=1807113 u=tobkern n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 4 seconds
+2023-01-01 14:41:08,936 p=1807113 u=tobkern n=ansible | Sonntag 01 Januar 2023  14:41:08 +0100 (0:00:00.049)       0:00:04.738 ******** 
+2023-01-01 14:41:08,936 p=1807113 u=tobkern n=ansible | =============================================================================== 
+2023-01-01 14:41:08,937 p=1807113 u=tobkern n=ansible | Gathering Facts -------------------------------------------------------------------------------------------------------------------------- 4.65s
+2023-01-01 14:41:08,937 p=1807113 u=tobkern n=ansible | Clone configuration directories ---------------------------------------------------------------------------------------------------------- 0.05s
+2023-01-01 14:41:08,938 p=1807113 u=tobkern n=ansible | Sonntag 01 Januar 2023  14:41:08 +0100 (0:00:00.051)       0:00:04.737 ******** 
+2023-01-01 14:41:08,938 p=1807113 u=tobkern n=ansible | =============================================================================== 
+2023-01-01 14:41:08,939 p=1807113 u=tobkern n=ansible | gather_facts ------------------------------------------------------------ 4.65s
+2023-01-01 14:41:08,939 p=1807113 u=tobkern n=ansible | git --------------------------------------------------------------------- 0.05s
+2023-01-01 14:41:08,940 p=1807113 u=tobkern n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2023-01-01 14:41:08,940 p=1807113 u=tobkern n=ansible | total ------------------------------------------------------------------- 4.70s
+2023-01-01 14:41:46,534 p=1807430 u=tobkern n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names to new standard, use callbacks_enabled instead. This feature will 
+be removed from ansible-core in version 2.15. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2023-01-01 14:41:46,888 p=1807430 u=tobkern n=ansible | PLAY [Install aide] *****************************************************************************************************************************
+2023-01-01 14:41:46,918 p=1807430 u=tobkern n=ansible | TASK [Gathering Facts] **************************************************************************************************************************
+2023-01-01 14:41:46,918 p=1807430 u=tobkern n=ansible | Sonntag 01 Januar 2023  14:41:46 +0100 (0:00:00.037)       0:00:00.037 ******** 
+2023-01-01 14:41:46,919 p=1807430 u=tobkern n=ansible | Sonntag 01 Januar 2023  14:41:46 +0100 (0:00:00.035)       0:00:00.035 ******** 
+2023-01-01 14:41:51,407 p=1807430 u=tobkern n=ansible | ok: [localhost]
+2023-01-01 14:41:51,504 p=1807430 u=tobkern n=ansible | TASK [Clone configuration directories] **********************************************************************************************************
+2023-01-01 14:41:51,505 p=1807430 u=tobkern n=ansible | Sonntag 01 Januar 2023  14:41:51 +0100 (0:00:04.586)       0:00:04.624 ******** 
+2023-01-01 14:41:51,506 p=1807430 u=tobkern n=ansible | Sonntag 01 Januar 2023  14:41:51 +0100 (0:00:04.586)       0:00:04.621 ******** 
+2023-01-01 14:41:51,551 p=1807430 u=tobkern n=ansible | fatal: [localhost]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'list object' has no attribute 'repo'\n\nThe error appears to be in '/opt/dev/ansible/ansible-home-tobkern/playbooks/sicherheit/aide-repo.yml': line 8, column 5, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n  tasks:\n  - name: Clone configuration directories\n    ^ here\n"}
+2023-01-01 14:41:51,557 p=1807430 u=tobkern n=ansible | PLAY RECAP **************************************************************************************************************************************
+2023-01-01 14:41:51,557 p=1807430 u=tobkern n=ansible | localhost                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-01-01 14:41:51,558 p=1807430 u=tobkern n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 4 seconds
+2023-01-01 14:41:51,559 p=1807430 u=tobkern n=ansible | Sonntag 01 Januar 2023  14:41:51 +0100 (0:00:00.054)       0:00:04.678 ******** 
+2023-01-01 14:41:51,560 p=1807430 u=tobkern n=ansible | =============================================================================== 
+2023-01-01 14:41:51,561 p=1807430 u=tobkern n=ansible | Gathering Facts -------------------------------------------------------------------------------------------------------------------------- 4.59s
+2023-01-01 14:41:51,561 p=1807430 u=tobkern n=ansible | Clone configuration directories ---------------------------------------------------------------------------------------------------------- 0.05s
+2023-01-01 14:41:51,562 p=1807430 u=tobkern n=ansible | Sonntag 01 Januar 2023  14:41:51 +0100 (0:00:00.056)       0:00:04.678 ******** 
+2023-01-01 14:41:51,563 p=1807430 u=tobkern n=ansible | =============================================================================== 
+2023-01-01 14:41:51,563 p=1807430 u=tobkern n=ansible | gather_facts ------------------------------------------------------------ 4.59s
+2023-01-01 14:41:51,564 p=1807430 u=tobkern n=ansible | git --------------------------------------------------------------------- 0.06s
+2023-01-01 14:41:51,565 p=1807430 u=tobkern n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2023-01-01 14:41:51,565 p=1807430 u=tobkern n=ansible | total ------------------------------------------------------------------- 4.64s
